@@ -23,7 +23,7 @@ def color_name_to_hex(colors: list) -> list:
     hex_list = []
 
     for color in colors:
-        hex_list.append((cnames[color], color))
+        hex_list.append((color, cnames[color]))
 
     return hex_list
 
