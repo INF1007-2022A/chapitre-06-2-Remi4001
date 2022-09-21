@@ -29,9 +29,17 @@ def color_name_to_hex(colors: list) -> list:
 
 
 def create_list() -> list:
-    # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
+    # Créer une liste des 10 000 premiers entiers positif,
+    # sauf pour les entiers de 15 à 350
+    liste = []
 
-    return []
+    for i in range(15):
+        liste.append(i)
+
+    for i in range(351, 10000):
+        liste.append(i)
+
+    return liste
 
 
 def compute_mse(model_dict: dict) -> dict:
